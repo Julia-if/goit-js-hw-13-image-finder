@@ -1,0 +1,48 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+@import 'basicLightbox';
+
+.search-form {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.search-form input {
+  width: 400px;
+  height: 45px;
+}
+
+.gallery {
+  padding: 0 20px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px;
+  width: 1360px;
+  // align-items: stretch;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  flex-basis: calc((100% - 4 * 5px) / 3);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.48), 0px 4px 4px 0px rgba(0, 0, 0, 0.18),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.36);
+  }
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+}
